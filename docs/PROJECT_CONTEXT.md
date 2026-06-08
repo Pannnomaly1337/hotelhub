@@ -42,7 +42,8 @@ reservation pattern + expires_at, price freeze, JWT/bcrypt separation,
 access+refresh token, separation of duties, defense in depth
 
 ## Progress
-- [x] Phase 0: Project Brief — DONE
+- [x] Phase 0: Project Brief & Setup — DONE
+    - Brief, roadmap, repo, branch protection, Git workflow ครบ
 - [ ] Phase 1: Design — IN PROGRESS (User Stories, RBAC Matrix, Architecture, DB Design, API, UI)
 - [ ] Phase 2-9: see docs/00-roadmap.md for full details
 
@@ -50,4 +51,4 @@ access+refresh token, separation of duties, defense in depth
 Full 9-phase roadmap: docs/00-roadmap.md
 
 ## Next step
-Phase 1 — เริ่มที่ Database Design (user's weak point, ต้องสอนละเอียด)
+Phase 1 — เริ่มที่ Database Design (ต้องสอนละเอียด)
