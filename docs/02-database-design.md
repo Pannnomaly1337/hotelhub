@@ -57,6 +57,7 @@
 erDiagram
     ROOMTYPE ||--o{ ROOM : categorizes
     USER ||--o{ BOOKING : makes
+    USER ||--o{ HOUSEKEEPINGTASK : "assigned to"
     ROOM ||--o{ BOOKING : "reserved in"
     BOOKING ||--o{ PAYMENT : "paid via"
     BOOKING ||--o| REVIEW : "rated by"
