@@ -64,3 +64,46 @@ erDiagram
     ROOM ||--o{ HOUSEKEEPINGTASK : "cleaned via"
     USER ||--o{ AUDITLOG : performs
 ```
+
+### ROOMTYPE and ROOM Entities
+
+```mermaid
+erDiagram
+    ROOMTYPE ||--o{ ROOM : categorizes
+    ROOMTYPE {
+        uuid id PK
+        string name
+        decimal basePrice
+        int capacity
+        enum bedType
+        text description
+        timestamp createdAt
+        timestamp updatedAt
+    }
+    ROOM {
+        uuid id PK
+        uuid roomTypeId FK
+        string roomNumber
+        int floor
+        enum status
+        timestamp createdAt
+        timestamp updatedAt
+    }
+```
+
+### USER Entity
+
+```mermaid
+erDiagram
+    USER {
+        uuid id PK
+        string firstName
+        string lastName
+        string email "unique"
+        string hashedPassword
+        enum role "5 roles"
+        string phone "nullable"
+        timestamp createdAt
+        timestamp updatedAt
+    }
+```
